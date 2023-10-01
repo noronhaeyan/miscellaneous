@@ -1,0 +1,21 @@
+Open git bash in the folder you would like to create a remote repo
+
+Type: git init -b main
+
+If you existing files in your local repo, type: git add . This should be followed by: git commit -m "First commit"
+
+Create a new repository on GitHub.com. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. I always keep the name of my local folder the same as my GitHub repo. Not sure what happens if the name of the two folders are different.
+
+At the top of your repository on GitHub.com's Quick Setup page, copy the remote repository URL
+
+In your git bash type: git remote add origin <REMOTE_URL>
+
+Verify using: git remote -v
+
+If you committed any changes earlier, push them to main (GitHub): git push origin main
+
+Update your remote GitHub repo to you local working directory by repeating the steps: add, commit, pull, push
+
+To create a gitignore file, eg. to ignore IPython notebook checkpoints, use https://www.toptal.com/developers/gitignore
+
+There are open source softwares available to generate Readme.md files for your repo based on your code. I haven't used them yet, so I will update when I am more familiar with the process.
